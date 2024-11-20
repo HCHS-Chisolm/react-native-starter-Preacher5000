@@ -1,16 +1,13 @@
-import { Text, SafeAreaView, StyleSheet,View,TouchableHighlight,TextInput, PaperProvider} from 'react-native';
+import { Text, SafeAreaView, StyleSheet,View,TouchableHighlight,TextInput,} from 'react-native';
 import React from "react"
-import { Provider as PaperProvider } from 'react-native-paper';
-
-import LoginScreen from './src/screens/LoginScreen';
-
+import { Card } from 'react-native-paper';
 
 export default function loginScreen() {
   const [email, onChangeEmail] = React.useState('Email');
   const [pass, onChangePass] = React.useState('Password');
 
   return (
-    <PaperProvider style={styles.container}>
+    <SafeAreaView style={styles.container}>
       <View style={styles.border}>
       <View style={styles.background}>
       
@@ -45,7 +42,7 @@ export default function loginScreen() {
         </Text>
         </View>
       
-    </PaperProvider>
+    </SafeAreaView>
   );
 }
 
