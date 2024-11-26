@@ -1,4 +1,4 @@
-import { Text, SafeAreaView, StyleSheet,View,TouchableHighlight,TextInput, PaperProvider} from 'react-native';
+import { Text, SafeAreaView, StyleSheet,View,TouchableHighlight,TextInput,} from 'react-native';
 import React from "react"
 import { Provider as PaperProvider } from 'react-native-paper';
 

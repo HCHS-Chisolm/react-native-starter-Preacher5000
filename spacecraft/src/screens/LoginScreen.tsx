@@ -1,4 +1,4 @@
-import { Text, SafeAreaView, StyleSheet,View,TouchableHighlight,TextInput,} from 'react-native';
+import { Text, SafeAreaView, StyleSheet,View,TouchableHighlight,TextInput } from 'react-native';
 import React from "react"
 import { Card } from 'react-native-paper';
 
@@ -12,7 +12,7 @@ export default function loginScreen() {
       <View style={styles.background}>
       
         <Text style={styles.paragraph}>
-          Space Craft
+          <Header title={"SpaceCraft"}/>
         </Text>
       </View>
         <TextInput
