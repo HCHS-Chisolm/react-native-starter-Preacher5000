@@ -1,6 +1,7 @@
 import { Text, SafeAreaView, StyleSheet,View,TouchableHighlight,TextInput } from 'react-native';
 import React from "react"
 import { Card } from 'react-native-paper';
+import { Header } from 'react-native/Libraries/NewAppScreen';
 
 export default function loginScreen() {
   const [email, onChangeEmail] = React.useState('Email');
