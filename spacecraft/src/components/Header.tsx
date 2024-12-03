@@ -5,13 +5,12 @@ interface HeaderProps {
     title: string;
 }
 
-const Header: React.
-    FC<HeaderProps> = ({ title })=> {
-        return <Text style={styles.title}> {title}</Text>
-    };
+export const Header: React.FC<HeaderProps> = ({ title })=> {
+    return <Text style={styles.title}> {title}</Text>
+};
 
-    const styles = StyleSheet.create({
-        title: {
-            
-        },
-    })
+const styles = StyleSheet.create({
+    title: {
+        
+    },
+})

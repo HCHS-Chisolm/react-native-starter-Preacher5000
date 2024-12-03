@@ -1,21 +1,20 @@
 import { Text, SafeAreaView, StyleSheet,View,TouchableHighlight,TextInput } from 'react-native';
-import React from "react"
+import React from "react";
 import { Card } from 'react-native-paper';
-import { Header } from 'react-native/Libraries/NewAppScreen';
+import { Header } from '../components/Header';
 
-export default function loginScreen() {
+export default function LoginScreen() {
   const [email, onChangeEmail] = React.useState('Email');
   const [pass, onChangePass] = React.useState('Password');
 
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.border}>
-      <View style={styles.background}>
-      
-        <Text style={styles.paragraph}>
-          <Header title={"SpaceCraft"}/>
-        </Text>
-      </View>
+        <View style={styles.background}>
+          <Text style={styles.paragraph}>
+            <Header title={"SpaceCraft"}/>
+          </Text>
+        </View>
         <TextInput
           style={styles.firstJunt1}
           onChangeText={onChangeEmail}
@@ -41,7 +40,7 @@ export default function loginScreen() {
         <Text style={styles.terms}>
             Read terms and Conditions.
         </Text>
-        </View>
+      </View>
       
     </SafeAreaView>
   );
