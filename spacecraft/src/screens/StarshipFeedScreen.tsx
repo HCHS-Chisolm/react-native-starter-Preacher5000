@@ -1,5 +1,4 @@
 import { FlatList, StatusBar, StyleSheet, Text, View } from "react-native";
-
 import { default as data } from "../../api/data.json";
 const Item = ({title}) => (
   <View style={styles.item}>
