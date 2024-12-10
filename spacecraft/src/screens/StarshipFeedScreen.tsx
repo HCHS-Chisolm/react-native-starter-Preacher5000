@@ -1,16 +1,12 @@
 import { FlatList, StatusBar, StyleSheet, Text, View } from "react-native";
 import { default as data } from "../../api/data.json";
-const Item = ({title}) => (
-  <View style={styles.item}>
-    <Text style={styles.title}>{title}</Text>
-  </View>
-);
+import StarshipItem from "../components/StarshipItem";
 export const StarshipFeedScreen = () => {
   return (
     <View style={styles.container}>
        <FlatList
         data={data.results}
-        renderItem={({item}) => <Item title={item.name} />}
+        renderItem={({item}) => <StarshipItem starship={item} />}
         keyExtractor={(item) => item.url}
       />
     </View>
